@@ -2,29 +2,36 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+
 }
 
-.container {
-    border: 1px solid black;
-    min-height: auto;
-    border-radius: 0%;
+h3 {
+    text-align: center;
+    color: rgb(26, 176, 226);
 }
 
 .card1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: 5px solid purple;
     min-height: 250px;
-    border: 1px solid black;
-    width: 200px;
-    margin: 1em;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    width: 450px;
+    justify-content: center;
+    
 }
 
 .card2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    border: 5px solid lavender;
     min-height: 250px;
-    border: 1px solid black;
-    width: ;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    width: 450px;
+    justify-content: center;
+}
+
+#gameboard {
+    text-align: center;
 }
