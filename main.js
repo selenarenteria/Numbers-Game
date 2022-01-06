@@ -3,15 +3,11 @@ console.log('Game started')
 
 
 
-const playerDeck = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const computerDeck = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const playerDeck = []
+const computerDeck = []
 
-// console.log(playerDeck[0])
-// console.log(computerDeck[0])
+const Deck = [1, 2, 3, 4, 5, 6, 7 ,8 ,9, 10]
 
-const randomPlayerChoice = Math.floor(Math.random()*playerDeck.length)
-const randomComputerChoice = Math.floor(Math.random()*computerDeck.length)
-console.log(randomPlayerChoice, randomComputerChoice)
 
 
 const startGameButton = document.querySelector('.start-button')
@@ -20,32 +16,39 @@ startGameButton.addEventListener("click", eventHandler)
 
 function eventHandler() { 
 const start = document.createElement("START");
-start.innerText = "Game Begins";
 document.body.appendChild(start); 
 
-  const playerHand = document.querySelector('.card2')
+const playerHand = document.querySelector('.card2')
   console.log(playerHand)
 
-  playerHand.addEventListener("click", isPlayerTurn)
+playerHand.addEventListener("click", isPlayerTurn)
 
-  function isPlayerTurn () {
-  const pl1 = document.createElement("PLAYER");
-  pl1.innerText = "Player Choice";
-  document.body.appendChild(pl1);
+function isPlayerTurn () {
+const pl1 = document.createElement("div");
+const randomPlayerChoice = Math.floor(Math.random()*Deck.length)
+pl1.textContent = randomPlayerChoice
+playerHand.appendChild(pl1);
 
 
-  const computerHand = document.querySelector(".card1")
-  console.log(computerHand)
+const computerHand = document.querySelector(".card1")
+console.log(computerHand)
 
-  computerHand.addEventListener("click", isComputerTurn)
+computerHand.addEventListener("click", isComputerTurn)
 
-  function isComputerTurn() {
-    const cpu = document.createElement("COMPUTER");
-    cpu.innerText = "Computer Choice";
-    document.body.appendChild(cpu);
+function isComputerTurn() {
+const cpu = document.createElement("div");
+const randomComputerChoice = Math.floor(Math.random()*Deck.length)
+cpu.textContent = randomComputerChoice
+computerHand.appendChild(cpu);
 }
   }
 }
 
+// create a function where the value from the playerDeck and computerDeck
+// pop up on the screen  
 
+// const randomPlayerChoice = Math.floor(Math.random()*Deck.length)
+// const randomComputerChoice = Math.floor(Math.random()*Deck.length)
+
+startGameButton.click()
 
