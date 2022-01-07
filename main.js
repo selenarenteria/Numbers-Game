@@ -6,7 +6,7 @@ const playerDeck = []
 const computerDeck = []
 
 
-const Deck = [1, 2, 3, 4, 5, 6, 7 ,8 ,9, 10] 
+ const Deck = [1, 2, 3, 4, 5, 6, 7 ,8 ,9, 10] 
  
 
 
@@ -20,26 +20,25 @@ function isPlayerTurn () {
     if (Deck.length>0) {
 
         const pl1 = document.createElement("div");
-        const randomPlayerChoice = Math.floor(Math.random()*Deck.length)
+          const randomPlayerChoice = Math.floor(Math.random()*Deck.length)
+        
         // while loop 
+        
+             const getPlayerCard = Deck.splice(randomPlayerChoice, 1)[0]
+            playerDeck.push(getPlayerCard)
 
-            // player and computer cannot get the same card 
-             const removeCard = Deck.splice(randomPlayerChoice, 1)[0]
-            
-            
-             // .push[] remove card into playerDeck 
-             removeCard.push(playerDeck)
-             pl1.textContent = removeCard
-             playerHand.appendChild(pl1);
+            pl1.textContent = getPlayerCard
+            document.getElementById("pcards").replaceChildren(pl1)
+            //   playerHand.textContent = pl1.textContent
              console.log("Deck", Deck)
-
-
-    } else {
+     } else {
         console.log("Game over no cards left")
     }
 
-   
-}
+   }
+
+
+
 
 
 const computerHand = document.querySelector('.card1')
@@ -48,15 +47,16 @@ computerHand.addEventListener("click", isComputerTurn)
 
 function isComputerTurn () {
     if (Deck.length>0) {
+
         const cpu = document.createElement("div");
         const randomComputerChoice = Math.floor(Math.random()*Deck.length) 
        // while loop  
 
         
-        const removeCard = Deck.splice(randomComputerChoice, 1)[0]
-        // .push() remove card into computerDeck
-        cpu.textContent = removeCard
-        computerHand.appendChild(cpu);
+        const getComputerCard = Deck.splice(randomComputerChoice, 1)[0]
+        cpu.textContent = getComputerCard
+        document.getElementById("ccards").replaceChildren(cpu)
+       console.log("Deck", Deck)
 
 
     } else {
@@ -93,8 +93,7 @@ function pressReset() {
     return location.reload()
 }
 
-// create a function to determine 
-// function determine
+
 
 
 
