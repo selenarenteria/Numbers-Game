@@ -1,16 +1,14 @@
 console.log('Game started')
 
-
-
 const playerDeck = []
 const computerDeck = []
+let pscore = 0
+let cscore = 0
+let scoresMcGee = document.getElementById("pscore")
 
 
- const Deck = [1, 2, 3, 4, 5, 6, 7 ,8 ,9, 10] 
+const Deck = [1, 2, 3, 4, 5, 6, 7 ,8 ,9, 10] 
  
-
-
-
 const playerHand = document.querySelector('.card2')
 console.log(playerHand)
 
@@ -22,23 +20,19 @@ function isPlayerTurn () {
         const pl1 = document.createElement("div");
           const randomPlayerChoice = Math.floor(Math.random()*Deck.length)
         
-        // while loop 
         
              const getPlayerCard = Deck.splice(randomPlayerChoice, 1)[0]
             playerDeck.push(getPlayerCard)
-
+            pscore+= getPlayerCard
             pl1.textContent = getPlayerCard
             document.getElementById("pcards").replaceChildren(pl1)
-            //   playerHand.textContent = pl1.textContent
+            scoresMcGee.innerText=pscore
              console.log("Deck", Deck)
      } else {
         console.log("Game over no cards left")
     }
 
    }
-
-
-
 
 
 const computerHand = document.querySelector('.card1')
@@ -50,7 +44,7 @@ function isComputerTurn () {
 
         const cpu = document.createElement("div");
         const randomComputerChoice = Math.floor(Math.random()*Deck.length) 
-       // while loop  
+       
 
         
         const getComputerCard = Deck.splice(randomComputerChoice, 1)[0]
@@ -67,16 +61,40 @@ function isComputerTurn () {
 }
   
 
-const startGameButton = document.querySelector('.start-button')
-console.log(startGameButton)
+// const startGameButton = document.querySelector('.start-button')
+// console.log(startGameButton)
 
-startGameButton.addEventListener("click", gameStarting)
+// startGameButton.addEventListener("click", gameStarting)
 
-function gameStarting() { 
-    const start = document.createElement("START");
-    document.body.appendChild(start); 
-    console.log("this is working!")
-}
+// function gameStarting() { 
+//     const start = document.createElement("START");
+//     document.body.appendChild(start); 
+//     // console.log("this is working!")
+//     const modal = document.getElementById("myModal");
+
+// // Get the button that opens the modal
+// const btn = document.getElementById('.start-button');
+
+// // Get the <span> element that closes the modal
+// const span = document.getElementsByClassName("close")[0];
+
+// // When the user clicks on the button, open the modal
+// startGameButton.onclick = function() {
+//   modal.style.display = "block";
+// }
+
+// // When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
+// }
 
 const resetGameButton = document.querySelector('.reset-button')
 console.log(resetGameButton)
@@ -94,7 +112,14 @@ function pressReset() {
 }
 
 
+const totalScore = 0
+if (isPlayerTurn){
 
+} else {
 
+    if(isComputerTurn) {
+
+    }
+}
 
 
