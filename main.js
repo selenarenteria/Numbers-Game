@@ -41,27 +41,21 @@ window.onclick = function(event) {
 }
 }
 
-const winner =document.querySelector('.winner')
+let winner =document.querySelector('.winner')
 console.log(winner)
 
 function checkForWinners() {
-    if (playerScore > 10) {
+    if (pscore>cscore) {
         console.log ("Player Wins")
         winner.innerText = "Player Wins!"
-     } else if (playerScore => 5 ) {
-         console.log ("Player Wins")
-        winner.innerText= "Player Wins!"
-     } else if (computerScore > 10) {
-         console.log ("Computer Wins")
-        winner.innerText= "Computer Wins"
-     }else if (computerScore => 5) {
-         console.log ("Computer Wins")
+     } else if (cscore>pscore) {
+         console.log ("Computer Wins!")
         winner.innerText= "Computer Wins!"
-    }else if (playerScore === 10 && computerScore === 10){
-        console.log ("Tie!")
-        winner.innerText= "Tie!"
-    }
+     }
 }
+console.log('after all cards played')
+console.log(pscore,cscore)
+checkForWinners()
  
 const playerHand = document.querySelector('.card2')
 console.log(playerHand)
@@ -138,29 +132,7 @@ function pressReset() {
 
 
 
-// function checkForWinners() {
-//     if (pscore > 10) {
-//         console.log ("Player WIns")
-//         winner.innerText = "Player Wins!"
-//     } else if (pscore => 5 ) {
-//         console.log ("Player Wins")
-//         winner.innerText= "Player Wins!"
-//     } else if (cscore > 10) {
-//         console.log ("Computer Wins")
-//         winner.innerText= "Computer Wins"
-//     }else if (cscore => 5) {
-//         console.log ("Computer Wins")
-//         winner.innerText= "Computer Wins!"
-//     }else if (pscore === 10 && cscore === 10){
-//         console.log ("Tie!")
-//         winner.innerText= "Tie!"
-    // }else if (dealerScore > playerScore && dealerScore >16 && dealerScore <=21) {
-    //     console.log ("House wins! You lose!")
-    //     winner.innerText= "House wins! You lose!"
-    // }else if (playerScore > dealerScore && playerScore >16 && playerScore <=21) {
-    //     console.log ("You win! House loses!")
-    //     winner.innerText= "You win! House loses!"
-    //  }
+
 
 
 
