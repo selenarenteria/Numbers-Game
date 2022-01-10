@@ -1,8 +1,9 @@
 * {
     box-sizing: border-box;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
+    font-size: 25px;
     background: rgb(176, 38, 255);
+    text-shadow: 0 0 3px #6d0e70, 0 0 5px #951fdac5;
 
     
 
@@ -10,7 +11,7 @@
 
 h3 {
     text-align: center;
-    color: plum;
+    color: lavender;
     font-style: italic;
 }
 h4 {
