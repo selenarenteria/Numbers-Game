@@ -1,13 +1,20 @@
 * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
+    background: rgb(176, 38, 255);
+
+    
 
 }
 
 h3 {
     text-align: center;
-    color: rgb(26, 176, 226);
+    color: plum;
+    font-style: italic;
+}
+h4 {
+  font-style: italic;
 }
 
 .winner {
@@ -24,6 +31,9 @@ h3 {
     width: 450px;
     justify-content: center;
     flex-direction: column;
+    background: url(https://i.imgur.com/nTHUOAes.jpg);
+    color:white;
+
     
 }
 
@@ -37,6 +47,8 @@ h3 {
     width: 450px;
     justify-content: center;
     flex-direction: column;
+    background: url(https://i.imgur.com/BJ0iuoRs.jpeg);
+    color: white;
 }
 
 #gameboard {
