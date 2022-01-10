@@ -48,6 +48,8 @@ Buttons: Start , Reset
 
 <img width="767" alt="Screen Shot 2022-01-10 at 9 26 54 AM" src="https://user-images.githubusercontent.com/95322104/148793573-38531ee0-346a-489a-a76b-4885064af6c2.png">
 
+<img width="606" alt="Screen Shot 2022-01-10 at 9 41 35 AM" src="https://user-images.githubusercontent.com/95322104/148794512-de50f4a4-2609-4144-9182-119927cfd16a.png">
+
 
 https://srenteria28.github.io/Numbers-Game/
 
