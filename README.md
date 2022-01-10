@@ -43,4 +43,10 @@ Cards are numbered 1-10
 
 Buttons: Start , Reset
 
+
+<img width="652" alt="Screen Shot 2022-01-10 at 9 25 48 AM" src="https://user-images.githubusercontent.com/95322104/148792715-a31dd707-17f6-409a-97bc-a538c7c7bd06.png">
+
+
+
 https://srenteria28.github.io/Numbers-Game/
+
