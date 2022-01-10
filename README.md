@@ -43,6 +43,7 @@ Cards are numbered 1-10
 
 Buttons: Start , Reset
 
+<img width="819" alt="wireframe Selenas speed game" src="https://user-images.githubusercontent.com/95322104/148816899-dc201031-62c0-4ba8-b1b3-46c362939ac2.png">
 
 <img width="652" alt="Screen Shot 2022-01-10 at 9 25 48 AM" src="https://user-images.githubusercontent.com/95322104/148792715-a31dd707-17f6-409a-97bc-a538c7c7bd06.png">
 
